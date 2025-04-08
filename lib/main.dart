@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'tela inicial.dart';
 
 void main() {
   runApp(LoginApp ());
@@ -63,8 +64,10 @@ body: Padding(
     SizedBox(height: 32.0),
     ElevatedButton(
       onPressed:(){
-
-
+            Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Lista()),
+            ); 
       }, 
        style: ElevatedButton.styleFrom(
         backgroundColor: Color.fromARGB(255, 54, 197, 154), //cor do fundo do botao
